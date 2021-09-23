@@ -72,9 +72,6 @@ class RecipeController extends Controller
 
         $recipe->user_id = Auth::user()->id;
 
-        $recipe->ingredients = json_encode($request->ingredient);
-        $recipe->steps = json_encode($request->step);
-
         $recipe->save();
 
         return redirect()->route('recipes.index')->with('success', 'Rezept wurder erstellt!');
