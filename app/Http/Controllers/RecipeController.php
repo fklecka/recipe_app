@@ -85,10 +85,7 @@ class RecipeController extends Controller
      */
     public function show($id)
     {
-        $recipe = Recipe::findOrFail($id);
-
-        $recipe->ingredients = json_decode($recipe->ingredients);
-        $recipe->steps = json_decode($recipe->steps);        
+        $recipe = Recipe::findOrFail($id);    
 
         return view('recipes.show', compact('recipe'));
     }
