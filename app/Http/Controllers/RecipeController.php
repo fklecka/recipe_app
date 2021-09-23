@@ -102,9 +102,6 @@ class RecipeController extends Controller
 
         $this->authorize('edit', $recipe);
 
-        $recipe->ingredients = json_decode($recipe->ingredients);
-        $recipe->steps = json_decode($recipe->steps);  
-
         $categories = Category::all();
   
 
