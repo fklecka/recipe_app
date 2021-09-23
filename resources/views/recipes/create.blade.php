@@ -2,10 +2,12 @@
 
 @section('content')
 
+<script src="{{ asset('js/createform.js') }}" defer></script>
+
 <form action="{{ route('recipes.store') }}" method="POST" enctype="multipart/form-data">
     @csrf
-    <div class="flex justify-center">
-        <div class="form-content w-1/4 mt-4 bg-gray-200 p-4 rounded-lg">
+    <div class="flex justify-center flex-wrap m-4">
+        <div class="form-content w-80 m-4 bg-gray-200 p-4 rounded-lg">
             <fieldset>
                 <legend>Beschreibung</legend>
                 <div class="flex flex-col mb-2">
@@ -30,7 +32,7 @@
                 </div>
             </fieldset>
         </div>
-        <div class="form-content w-1/4 mt-4 ml-4 bg-gray-200 p-4 rounded-lg">
+        <div class="form-content w-80 m-4 bg-gray-200 p-4 rounded-lg">
             <fieldset>
                 <legend>Zutaten</legend>
                 <div class="flex flex-col mb-4 ingredients">
@@ -49,7 +51,7 @@
                 </p>
             </fieldset>
         </div>
-        <div class="form-content w-1/4 mt-4 ml-4 bg-gray-200 p-4 rounded-lg">
+        <div class="form-content w-80 m-4 bg-gray-200 p-4 rounded-lg">
             <fieldset>
                 <legend>Zubereitung</legend>
                 <div class="flex flex-col mb-4 steps">

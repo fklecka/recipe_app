@@ -188,7 +188,7 @@ class RecipeController extends Controller
 
     public function search(Request $request)
     {
-        $keywords = $request->searchbar;
+        $keywords = $request->search;
         $recipes = Recipe::search($keywords)->get();
 
         return view('recipes.search', compact('recipes'));

@@ -2,6 +2,7 @@ module.exports = {
     purge: [
         "./resources/views/home.blade.php",
         "./resources/views/layouts/app.blade.php",
+        "./resources/js/menu.js",
         "./resources/js/app.js",
         "./resources/js/createform.js",
     ],
@@ -14,7 +15,17 @@ module.exports = {
 
             blue: theme("colors.blue.500"),
         }),
-        extend: {},
+
+        extend: {
+            gridTemplateColumns: {
+                "auto-fit": "repeat(auto-fit, minmax(0, 1fr))",
+                "auto-fill": "repeat(auto-fill, minmax(0, 1fr))",
+            },
+            gridTemplateRows: {
+                "auto-fit": "repeat(auto-fit, minmax(0, 1fr))",
+                "auto-fill": "repeat(auto-fill, minmax(0, 1fr))",
+            },
+        },
     },
     variants: {
         fill: ["hover", "focus"],

@@ -20226,6 +20226,14 @@ video {
   grid-template-columns: none;
 }
 
+.grid-cols-auto-fit {
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+}
+
+.grid-cols-auto-fill {
+  grid-template-columns: repeat(auto-fill, minmax(0, 1fr));
+}
+
 .grid-rows-1 {
   grid-template-rows: repeat(1, minmax(0, 1fr));
 }
@@ -20252,6 +20260,14 @@ video {
 
 .grid-rows-none {
   grid-template-rows: none;
+}
+
+.grid-rows-auto-fit {
+  grid-template-rows: repeat(auto-fit, minmax(0, 1fr));
+}
+
+.grid-rows-auto-fill {
+  grid-template-rows: repeat(auto-fill, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -51497,6 +51513,14 @@ video {
     grid-template-columns: none;
   }
 
+  .sm\:grid-cols-auto-fit {
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  }
+
+  .sm\:grid-cols-auto-fill {
+    grid-template-columns: repeat(auto-fill, minmax(0, 1fr));
+  }
+
   .sm\:grid-rows-1 {
     grid-template-rows: repeat(1, minmax(0, 1fr));
   }
@@ -51523,6 +51547,14 @@ video {
 
   .sm\:grid-rows-none {
     grid-template-rows: none;
+  }
+
+  .sm\:grid-rows-auto-fit {
+    grid-template-rows: repeat(auto-fit, minmax(0, 1fr));
+  }
+
+  .sm\:grid-rows-auto-fill {
+    grid-template-rows: repeat(auto-fill, minmax(0, 1fr));
   }
 
   .sm\:flex-row {
@@ -82720,6 +82752,14 @@ video {
     grid-template-columns: none;
   }
 
+  .md\:grid-cols-auto-fit {
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-auto-fill {
+    grid-template-columns: repeat(auto-fill, minmax(0, 1fr));
+  }
+
   .md\:grid-rows-1 {
     grid-template-rows: repeat(1, minmax(0, 1fr));
   }
@@ -82746,6 +82786,14 @@ video {
 
   .md\:grid-rows-none {
     grid-template-rows: none;
+  }
+
+  .md\:grid-rows-auto-fit {
+    grid-template-rows: repeat(auto-fit, minmax(0, 1fr));
+  }
+
+  .md\:grid-rows-auto-fill {
+    grid-template-rows: repeat(auto-fill, minmax(0, 1fr));
   }
 
   .md\:flex-row {
@@ -113943,6 +113991,14 @@ video {
     grid-template-columns: none;
   }
 
+  .lg\:grid-cols-auto-fit {
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-auto-fill {
+    grid-template-columns: repeat(auto-fill, minmax(0, 1fr));
+  }
+
   .lg\:grid-rows-1 {
     grid-template-rows: repeat(1, minmax(0, 1fr));
   }
@@ -113969,6 +114025,14 @@ video {
 
   .lg\:grid-rows-none {
     grid-template-rows: none;
+  }
+
+  .lg\:grid-rows-auto-fit {
+    grid-template-rows: repeat(auto-fit, minmax(0, 1fr));
+  }
+
+  .lg\:grid-rows-auto-fill {
+    grid-template-rows: repeat(auto-fill, minmax(0, 1fr));
   }
 
   .lg\:flex-row {
@@ -145166,6 +145230,14 @@ video {
     grid-template-columns: none;
   }
 
+  .xl\:grid-cols-auto-fit {
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  }
+
+  .xl\:grid-cols-auto-fill {
+    grid-template-columns: repeat(auto-fill, minmax(0, 1fr));
+  }
+
   .xl\:grid-rows-1 {
     grid-template-rows: repeat(1, minmax(0, 1fr));
   }
@@ -145192,6 +145264,14 @@ video {
 
   .xl\:grid-rows-none {
     grid-template-rows: none;
+  }
+
+  .xl\:grid-rows-auto-fit {
+    grid-template-rows: repeat(auto-fit, minmax(0, 1fr));
+  }
+
+  .xl\:grid-rows-auto-fill {
+    grid-template-rows: repeat(auto-fill, minmax(0, 1fr));
   }
 
   .xl\:flex-row {
@@ -176389,6 +176469,14 @@ video {
     grid-template-columns: none;
   }
 
+  .\32xl\:grid-cols-auto-fit {
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  }
+
+  .\32xl\:grid-cols-auto-fill {
+    grid-template-columns: repeat(auto-fill, minmax(0, 1fr));
+  }
+
   .\32xl\:grid-rows-1 {
     grid-template-rows: repeat(1, minmax(0, 1fr));
   }
@@ -176415,6 +176503,14 @@ video {
 
   .\32xl\:grid-rows-none {
     grid-template-rows: none;
+  }
+
+  .\32xl\:grid-rows-auto-fit {
+    grid-template-rows: repeat(auto-fit, minmax(0, 1fr));
+  }
+
+  .\32xl\:grid-rows-auto-fill {
+    grid-template-rows: repeat(auto-fill, minmax(0, 1fr));
   }
 
   .\32xl\:flex-row {

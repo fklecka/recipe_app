@@ -2066,8 +2066,6 @@ module.exports = {
  * building robust, powerful web applications using Vue and Laravel.
  */
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
-
-__webpack_require__(/*! ./createform */ "./resources/js/createform.js");
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -2124,40 +2122,17 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
-/***/ "./resources/js/createform.js":
-/*!************************************!*\
-  !*** ./resources/js/createform.js ***!
-  \************************************/
+/***/ "./resources/js/menu.js":
+/*!******************************!*\
+  !*** ./resources/js/menu.js ***!
+  \******************************/
 /***/ (() => {
 
-var add_ingredient = document.querySelector(".add_ingredient");
-var add_step = document.querySelector(".add_step");
-var ingredients = document.querySelector(".ingredients");
-var steps = document.querySelector(".steps");
-add_ingredient.addEventListener("click", function () {
-  ingredients.insertAdjacentHTML("beforeend", "<div class=\"flex items-center mb-2\">\n        <input type=\"text\" name=\"ingredients[]\" id=\"ingredients\" class=\"h-8 rounded-lg w-full pl-2\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-7 w-7 delete_input cursor-pointer\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n            <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16\" />\n        </svg>\n        </div>");
-  delete_input_function();
+var mobile_menu_open = document.querySelector(".mobile_menu_open");
+var mobile_menu = document.querySelector(".mobile_menu");
+mobile_menu_open.addEventListener("click", function () {
+  mobile_menu.classList.toggle("hidden");
 });
-add_step.addEventListener("click", function () {
-  steps.insertAdjacentHTML("beforeend", "<div class=\"flex items-center mb-2\">\n        <textarea name=\"steps[]\" id=\"steps\" cols=\"30\" rows=\"4\" class=\"rounded-lg w-full resize-none px-2\"></textarea>\n        <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-7 w-7 delete_input cursor-pointer\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n            <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16\" />\n        </svg>\n        </div>");
-  delete_input_function();
-});
-
-var delete_input_function = function delete_input_function() {
-  var delete_input = document.querySelectorAll(".delete_input");
-
-  var _loop = function _loop(x) {
-    delete_input[x].addEventListener("click", function () {
-      delete_input[x].parentNode.remove();
-    });
-  };
-
-  for (var x = 0; x < delete_input.length; x++) {
-    _loop(x);
-  }
-};
-
-delete_input_function();
 
 /***/ }),
 
@@ -37742,6 +37717,8 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
 /******/ 	__webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/js/bootstrap.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/js/menu.js")))
 /******/ 	__webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/sass/app.scss")))
 /******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/css/app.css")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);

@@ -1,10 +1,6 @@
 const add_ingredient = document.querySelector(".add_ingredient");
-const add_step = document.querySelector(".add_step");
-
-const ingredients = document.querySelector(".ingredients");
-const steps = document.querySelector(".steps");
-
 add_ingredient.addEventListener("click", () => {
+    const ingredients = document.querySelector(".ingredients");
     ingredients.insertAdjacentHTML(
         "beforeend",
         `<div class="flex items-center mb-2">
@@ -17,7 +13,9 @@ add_ingredient.addEventListener("click", () => {
     delete_input_function();
 });
 
+const add_step = document.querySelector(".add_step");
 add_step.addEventListener("click", () => {
+    const steps = document.querySelector(".steps");
     steps.insertAdjacentHTML(
         "beforeend",
         `<div class="flex items-center mb-2">
