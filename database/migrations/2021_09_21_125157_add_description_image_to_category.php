@@ -14,7 +14,7 @@ class AddDescriptionImageToCategory extends Migration
     public function up()
     {
         Schema::table('categories', function (Blueprint $table) {
-            $table->string('img_url')->after('name');
+            $table->string('img_url')->after('name')->nullable();
         });
     }
 
