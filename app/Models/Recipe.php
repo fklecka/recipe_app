@@ -18,6 +18,8 @@ class Recipe extends Model
     'title',
     'description',
     'category',
+    'ingredients',
+    'steps'
     ];
 
     /**
